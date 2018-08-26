@@ -1,7 +1,8 @@
 // import libs to help create a component
 import React from 'react';
-import { Text, AppRegistry } from 'react-native';
-import Header from './src/components/header';
+import { AppRegistry, View } from 'react-native';
+import Header from './src/components/Header';
+import AlbumList from './src/components/AlbumList';
 
 
 // create a component
@@ -11,8 +12,11 @@ import Header from './src/components/header';
 //     );
 // }; // this App function can also be written as below...no curly braces implies a return statement
 const App = () => (
-    // <Text>Some Text</Text>
-    <Header headerText={'Albumssss!'}/>
+    <View>
+        <Header headerText={'Albumssss!'} />
+        <AlbumList />
+    </View>
+    
 );
 
 // render the created component
